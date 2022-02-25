@@ -20,3 +20,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+#Products routes
+Route::get('/admin/products', 'Admin\ProductController@products')->name('admin.products');
+Route::get('/admin/products/create', 'Admin\ProductController@create')->name('admin.products.create');
+
+#Products operations
+Route::post('/admin/products/store', 'Admin\ProductController@store')->name('admin.products.store');

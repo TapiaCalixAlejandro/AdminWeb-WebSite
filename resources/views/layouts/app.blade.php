@@ -116,6 +116,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  @yield('styles')
 </head>
 
 <body>
@@ -151,6 +152,7 @@
   <!-- Template Main JS File -->
   <script src="{{asset('/NiceAdmin/assets/js/main.js')}}"></script>
 
+  @yield('scripts')
 </body>
 
 </html>

@@ -20,10 +20,8 @@ class CreateProductsTable extends Migration
             $table->double('shipping')->nullable();
             $table->integer('stock');
             $table->string('description');
-            $table->string('image');
             $table->boolean('status')->default(true);
             $table->integer('user_id');
-            $table->foreignId('subcategory_id')->constrained('subcategories');
             $table->timestamps();
         });
     }
