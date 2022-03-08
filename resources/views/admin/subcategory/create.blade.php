@@ -18,7 +18,7 @@
             <span><strong>Agregar subcategoría</strong></span>
         </div>
         <div class="card-body">
-            <form action="" method="POST" enctype="multipart/form-data" class="m-3">
+            <form action="{{route('admin.subcategory.store')}}" method="POST" enctype="multipart/form-data" class="m-3">
                 @csrf
                 <div class="row-auto">
                     <div class="col-auto">
@@ -31,12 +31,12 @@
                         @enderror
                     </div>
                 </div>
-                <div class="row-auto">
+                {{-- <div class="row-auto">
                     <div class="col-auto mt-2">
                         <label for="images">Imagen<span class="badge bg-success text-white shadow-sm m-2">Seleccione una imagen para subacetgoría</span></label>
                         <input id="input-20" type="file" name="image" accept="image/*">
                     </div>
-                </div>
+                </div> --}}
             </form>
         </div>
     </div>

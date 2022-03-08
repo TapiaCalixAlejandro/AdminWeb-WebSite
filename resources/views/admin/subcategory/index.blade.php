@@ -14,20 +14,20 @@
                 <a href="{{route('admin.subcategory.create')}}" class="btn btn-primary shadow-sm rounded-pill">Agregar</a>
             </div>
             <div class="row card-body table-responsive">
-                <table class="table table-striped table-sm">
+                <table class="table table-sm">
                     <thead>
                         <tr>
-                            <th class="text-center text-primary">Imagen</th>
-                            <th class="text-center text-primary">Nombre</th>
-                            <th class="text-center text-primary">Categoría</th>
+                            <th class="text-center text-primary" scope="col">Imagen</th>
+                            <th class="text-center text-primary" scope="col">Nombre</th>
+                            <th class="text-center text-primary" scope="col">Categoría</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach($subcategory as $item)
                             <tr>
-                                <td>{{$item->image}}</td>
-                                <td>{{$item->name}}</td>
-                                <td>
+                                <td class="align-middle justify-content-center"><img src="/img/404_cat.png" alt="" class="rounded img-fluid" height="60" width="60"></td>
+                                <td class="align-middle justify-content-center">{{$item->name}}</td>
+                                <td class="align-middle justify-content-center">
                                     <a href="" class="btn btn-light">Detalle</a>
                                     <a href="" class="btn btn-light">Editar</a>
                                     <a href="" class="btn btn-light">Eliminar</a>

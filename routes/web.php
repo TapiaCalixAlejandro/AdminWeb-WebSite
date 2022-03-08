@@ -31,3 +31,6 @@ Route::post('/admin/products/store', 'Admin\ProductController@store')->name('adm
 #Subcategory routes
 Route::get('/admin/subcategory', 'Admin\SubcategoryController@subcategory')->name('admin.subcategory');
 Route::get('/admin/subcategory/create', 'Admin\SubcategoryController@create')->name('admin.subcategory.create');
+
+#Subacetgory operations
+Route::post('/admin/subcategory', 'Admin\SubcategoryController@storeSubcategory')->name('admin.subcategory.store');
