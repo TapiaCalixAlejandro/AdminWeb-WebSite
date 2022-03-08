@@ -21,7 +21,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{route('admin.subcategory')}}">
                 <i class="bi bi-circle"></i><span>Subcategorias</span>
                 </a>
             </li>
