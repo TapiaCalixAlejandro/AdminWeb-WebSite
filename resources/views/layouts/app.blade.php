@@ -151,6 +151,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{asset('/NiceAdmin/assets/js/main.js')}}"></script>
+  @include('sweetalert::alert')
 
   @yield('scripts')
 </body>
